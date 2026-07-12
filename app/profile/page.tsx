@@ -79,7 +79,7 @@ export default function ProfilePage() {
             </h2>
             <div className="space-y-4">
               <a
-                href="https://wa.me/917494954286"
+                href="https://wa.me/919960589128"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-emerald-50 rounded-2xl hover:bg-emerald-100 transition-colors"
@@ -92,13 +92,13 @@ export default function ProfilePage() {
                     WhatsApp us
                   </p>
                   <p className="text-xs text-slate-500">
-                    +91 74949 54286 · Fastest response
+                    +91 99605 89128 · Fastest response
                   </p>
                 </div>
               </a>
 
               <a
-                href="tel:+917494954286"
+                href="tel:+919960589128"
                 className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors"
               >
                 <div className="w-10 h-10 bg-royal/10 text-royal rounded-full flex items-center justify-center shrink-0">
@@ -113,7 +113,7 @@ export default function ProfilePage() {
               </a>
 
               <a
-                href="mailto:ananyaboutqiue9495@gmail.com"
+                href="mailto:shoppingannaya@gmail.com"
                 className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors"
               >
                 <div className="w-10 h-10 bg-royal/10 text-royal rounded-full flex items-center justify-center shrink-0">
@@ -122,7 +122,7 @@ export default function ProfilePage() {
                 <div>
                   <p className="font-bold text-slate-900 text-sm">Email Us</p>
                   <p className="text-xs text-slate-500">
-                    ananyaboutqiue9495@gmail.com
+                    shoppingannaya@gmail.com
                   </p>
                 </div>
               </a>
