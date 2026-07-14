@@ -3,8 +3,9 @@ import mongoose from "mongoose";
 import connectDB from "@/lib/mongodb";
 import Product from "@/models/Product";
 import { requireAdmin } from "@/lib/adminAuth";
+import { revalidatePath } from "next/cache";
 
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
@@ -56,7 +57,7 @@ export async function GET(req: NextRequest) {
 
     const products = await Product.find(query).sort(sortQuery);
     return NextResponse.json(products, {
-      headers: { "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600" },
+      headers: { "Cache-Control": "no-store, max-age=0, must-revalidate" },
     });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Unknown error";
@@ -81,6 +82,13 @@ export async function POST(req: NextRequest) {
 
     const newProduct = new Product(productData);
     await newProduct.save();
+
+    // Trigger Next.js cache revalidation
+    revalidatePath("/");
+    revalidatePath("/products");
+    if (newProduct.slug) revalidatePath(`/product/${newProduct.slug}`);
+    if (newProduct.category) revalidatePath(`/category/${newProduct.category}`);
+
     return NextResponse.json(newProduct, { status: 201 });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Unknown error";

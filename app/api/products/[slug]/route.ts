@@ -3,12 +3,12 @@ import mongoose from "mongoose";
 import connectDB from "@/lib/mongodb";
 import Product from "@/models/Product";
 import { requireAdmin } from "@/lib/adminAuth";
+import { revalidatePath } from "next/cache";
 
-// Cache individual product responses for 1 hour at the edge
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 const CACHE_HEADERS = {
-  "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
+  "Cache-Control": "no-store, max-age=0, must-revalidate",
 };
 
 export async function GET(_req: NextRequest, { params }: { params: Promise<{ slug: string }> }) {
@@ -34,8 +34,29 @@ export async function PUT(req: NextRequest, { params }: { params: Promise<{ slug
   try {
     await connectDB();
     const updateData = await req.json();
+    
+    // Fetch original product to know if slug/category changes, so we can revalidate both old and new paths
+    const original = await Product.findById(slug);
+
     const updated = await Product.findByIdAndUpdate(slug, { $set: updateData }, { new: true });
     if (!updated) return NextResponse.json({ message: "Product not found" }, { status: 404 });
+
+    // Trigger Next.js cache revalidation for updated paths
+    revalidatePath("/");
+    revalidatePath("/products");
+    if (updated.slug) revalidatePath(`/product/${updated.slug}`);
+    if (updated.category) revalidatePath(`/category/${updated.category}`);
+
+    // If slug or category changed, also revalidate the old paths
+    if (original) {
+      if (original.slug && original.slug !== updated.slug) {
+        revalidatePath(`/product/${original.slug}`);
+      }
+      if (original.category && original.category !== updated.category) {
+        revalidatePath(`/category/${original.category}`);
+      }
+    }
+
     return NextResponse.json(updated);
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Unknown error";
@@ -52,6 +73,13 @@ export async function DELETE(req: NextRequest, { params }: { params: Promise<{ s
     await connectDB();
     const deleted = await Product.findByIdAndDelete(slug);
     if (!deleted) return NextResponse.json({ message: "Product not found" }, { status: 404 });
+
+    // Trigger Next.js cache revalidation for deleted product paths
+    revalidatePath("/");
+    revalidatePath("/products");
+    if (deleted.slug) revalidatePath(`/product/${deleted.slug}`);
+    if (deleted.category) revalidatePath(`/category/${deleted.category}`);
+
     return NextResponse.json({ message: "Product deleted successfully" });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : "Unknown error";

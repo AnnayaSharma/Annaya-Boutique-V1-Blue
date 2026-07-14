@@ -56,24 +56,6 @@ export default function HomePageClient({ bestSellers, newArrivals }: { bestSelle
           </div>
         </section>
 
-        <section className="py-20 px-4 max-w-7xl mx-auto">
-          <div className="flex flex-col items-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-royal mb-4">Shop by Category</h2>
-            <div className="w-16 h-1 bg-gold rounded-full" />
-          </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map((cat) => (
-              <Link key={cat.name} href={cat.path} className="group relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
-                <Image src={cat.img} alt={cat.name} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-t from-royal/90 via-transparent to-transparent flex flex-col justify-end p-4">
-                  <h3 className="text-white font-serif font-bold text-lg">{cat.name}</h3>
-                  <span className="text-white/60 text-[10px] uppercase tracking-widest">Explore</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
         <section className="py-20 bg-slate-50 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-end justify-between mb-12">
@@ -92,6 +74,26 @@ export default function HomePageClient({ bestSellers, newArrivals }: { bestSelle
             </div>
           </div>
         </section>
+
+        <section className="py-20 px-4 max-w-7xl mx-auto">
+          <div className="flex flex-col items-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-royal mb-4">Shop by Category</h2>
+            <div className="w-16 h-1 bg-gold rounded-full" />
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {categories.map((cat) => (
+              <Link key={cat.name} href={cat.path} className="group relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
+                <Image src={cat.img} alt={cat.name} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-royal/90 via-transparent to-transparent flex flex-col justify-end p-4">
+                  <h3 className="text-white font-serif font-bold text-lg">{cat.name}</h3>
+                  <span className="text-white/60 text-[10px] uppercase tracking-widest">Explore</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+
 
         <section className="py-20 px-4 max-w-7xl mx-auto">
           <div className="flex flex-col items-center mb-12">
