@@ -17,7 +17,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <h2 className="text-2xl font-serif font-bold text-royal mb-6">Get in Touch</h2>
-              {[{ icon: Phone, label: "Phone / WhatsApp", href: "tel:+919960589128", value: "+91 99605 89128", sub: "Mon-Sat: 10am to 7pm (IST)" },
+              {[{ icon: Phone, label: "Phone / WhatsApp", href: "tel:+917600558179", value: "+91 76005 58179", sub: "Mon-Sat: 10am to 7pm (IST)" },
                 { icon: Mail, label: "Email", href: "mailto:shoppingannaya@gmail.com", value: "shoppingannaya@gmail.com", sub: "We typically reply within 24 hours" },
                 { icon: MapPin, label: "Location", href: null, value: "Mumbai", sub: "Maharashtra, India" }
               ].map(({ icon: Icon, label, href, value, sub }) => (
