@@ -5,11 +5,11 @@ import { Analytics } from "@vercel/analytics/react";
 
 
 export const metadata: Metadata = {
-  title: "Annaya Boutique",
+  title: "Urban Boutique",
   description: "Exquisite ethnic & contemporary fashion — where tradition meets modern luxury.",
   icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png", shortcut: "/favicon-16x16.png" },
   manifest: "/site.webmanifest",
-  appleWebApp: { title: "Annaya Boutique", statusBarStyle: "default", capable: true },
+  appleWebApp: { title: "Urban Boutique", statusBarStyle: "default", capable: true },
 };
 
 export const viewport = {

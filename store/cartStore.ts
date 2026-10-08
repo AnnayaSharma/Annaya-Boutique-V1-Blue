@@ -53,6 +53,6 @@ export const useCartStore = create<CartStore>()(
       getTotal: () => get().cart.reduce((total, item) => total + item.price * item.qty, 0),
       getItemCount: () => get().cart.reduce((count, item) => count + item.qty, 0),
     }),
-    { name: "annaya-cart" }
+    { name: "Urban-cart" }
   )
 );

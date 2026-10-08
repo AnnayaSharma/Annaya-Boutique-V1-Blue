@@ -12,7 +12,7 @@ export default function AboutPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-royal mb-6">Our Story</h1>
             <div className="w-16 h-1 bg-gold rounded-full mx-auto mb-6" />
-            <p className="text-slate-600 text-lg leading-relaxed">Welcome to Annaya Boutique, your premier destination for exquisite ethnic and contemporary fashion. Born from a passion for preserving traditional craftsmanship while embracing modern aesthetics, we bring you curated collections that celebrate the beauty of Indian wear.</p>
+            <p className="text-slate-600 text-lg leading-relaxed">Welcome to Urban Boutique, your premier destination for exquisite ethnic and contemporary fashion. Born from a passion for preserving traditional craftsmanship while embracing modern aesthetics, we bring you curated collections that celebrate the beauty of Indian wear.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-20">

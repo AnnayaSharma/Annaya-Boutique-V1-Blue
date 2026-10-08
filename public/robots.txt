@@ -13,4 +13,4 @@ Allow: /api/products
 Allow: /api/products/
 
 # Sitemaps
-Sitemap: https://annayaboutique.in/sitemap.xml
+Sitemap: https://Urbanboutique.in/sitemap.xml

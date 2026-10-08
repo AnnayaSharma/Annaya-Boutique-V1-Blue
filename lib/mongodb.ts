@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/annaya-boutique";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Urban-boutique";
 
 declare global {
   // eslint-disable-next-line no-var

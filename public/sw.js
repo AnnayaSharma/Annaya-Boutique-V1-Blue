@@ -1,4 +1,4 @@
-const CACHE_NAME = 'annaya-pwa-v1';
+const CACHE_NAME = 'Urban-pwa-v1';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

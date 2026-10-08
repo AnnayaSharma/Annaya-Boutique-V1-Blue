@@ -14,7 +14,7 @@ export default function TermsPage() {
             <p className="text-slate-500 font-medium">Last updated: {new Date().toLocaleDateString(undefined, { month: "long", year: "numeric" })}</p>
           </div>
           <div className="bg-white rounded-[40px] p-8 md:p-12 shadow-sm border border-slate-100 prose prose-slate max-w-none">
-            <p className="lead text-lg text-slate-600 mb-8">Welcome to Annaya Boutique. By accessing or using our website, you agree to be bound by these Terms of Service. Please read them carefully before making a purchase.</p>
+            <p className="lead text-lg text-slate-600 mb-8">Welcome to Urban Boutique. By accessing or using our website, you agree to be bound by these Terms of Service. Please read them carefully before making a purchase.</p>
             {[
               { title: "1. General Conditions", body: "We reserve the right to refuse service to anyone for any reason at any time. You understand that your content (not including credit card information), may be transferred unencrypted and involve transmissions over various networks." },
               { title: "2. Products and Pricing", body: "Prices for our products are subject to change without notice. We reserve the right at any time to modify or discontinue a product without notice. We have made every effort to display the colors and images of our products accurately, but we cannot guarantee that your device's display of any color will be precise." },

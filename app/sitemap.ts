@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import connectDB from "@/lib/mongodb";
 import Product from "@/models/Product";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://annayaboutique.in";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://Urbanboutique.in";
 
 export const revalidate = 86400; // rebuild sitemap daily
 

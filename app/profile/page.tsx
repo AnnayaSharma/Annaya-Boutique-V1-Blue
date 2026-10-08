@@ -24,7 +24,7 @@ export default function ProfilePage() {
                 A
               </div>
               <h1 className="text-2xl font-serif font-bold mb-1">
-                Welcome to Annaya Boutique
+                Welcome to Urban Boutique
               </h1>
               <p className="text-white/60 text-sm">
                 Your fashion destination
@@ -79,7 +79,7 @@ export default function ProfilePage() {
             </h2>
             <div className="space-y-4">
               <a
-                href="https://wa.me/917600558179"
+                href="https://wa.me/918396947070"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-emerald-50 rounded-2xl hover:bg-emerald-100 transition-colors"
@@ -92,13 +92,13 @@ export default function ProfilePage() {
                     WhatsApp us
                   </p>
                   <p className="text-xs text-slate-500">
-                    +91 76005 58179 · Fastest response
+                    +91 83969 47070 · Fastest response
                   </p>
                 </div>
               </a>
 
               <a
-                href="tel:+917600558179"
+                href="tel:+918396947070"
                 className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors"
               >
                 <div className="w-10 h-10 bg-royal/10 text-royal rounded-full flex items-center justify-center shrink-0">
@@ -113,7 +113,7 @@ export default function ProfilePage() {
               </a>
 
               <a
-                href="mailto:shoppingannaya@gmail.com"
+                href="mailto:urbanfashionboutique7@gmail.com"
                 className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors"
               >
                 <div className="w-10 h-10 bg-royal/10 text-royal rounded-full flex items-center justify-center shrink-0">
@@ -122,13 +122,13 @@ export default function ProfilePage() {
                 <div>
                   <p className="font-bold text-slate-900 text-sm">Email Us</p>
                   <p className="text-xs text-slate-500">
-                    shoppingannaya@gmail.com
+                    urbanfashionboutique7@gmail.com
                   </p>
                 </div>
               </a>
 
               <a
-                href="https://www.instagram.com/annaya_boutiique/"
+                href="https://www.instagram.com/Urban_boutiique/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors"
@@ -139,7 +139,7 @@ export default function ProfilePage() {
                 <div>
                   <p className="font-bold text-slate-900 text-sm">Instagram</p>
                   <p className="text-xs text-slate-500">
-                    @annaya_boutiique
+                    @Urban_boutiique
                   </p>
                 </div>
               </a>

@@ -137,7 +137,7 @@ export default function ProductDetailClient({ product, related }: Props) {
           {/* Product Info */}
           <div className="flex flex-col">
             <div className="text-xs font-bold text-sapphire tracking-[3px] uppercase mb-2">
-              Annaya Boutique • {product.category}
+              Urban Boutique • {product.category}
             </div>
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 leading-tight">
               {product.name}
@@ -317,7 +317,7 @@ export default function ProductDetailClient({ product, related }: Props) {
                     <li>Premium Quality Fabric</li>
                     <li>Handcrafted Embroidery</li>
                     <li>Dry Clean Recommended</li>
-                    <li>Authentic Annaya Boutique Design</li>
+                    <li>Authentic Urban Boutique Design</li>
                   </ul>
                 )}
                 {activeTab === "shipping" && (

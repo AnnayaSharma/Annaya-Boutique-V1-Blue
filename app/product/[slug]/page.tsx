@@ -32,9 +32,9 @@ export async function generateMetadata({
       { slug },
       { name: 1, description: 1, images: 1 }
     ).lean()) as { name: string; description: string; images: string[] } | null;
-    if (!product) return { title: "Product Not Found | Annaya Boutique" };
+    if (!product) return { title: "Product Not Found | Urban Boutique" };
     return {
-      title: `${product.name} | Annaya Boutique`,
+      title: `${product.name} | Urban Boutique`,
       description: product.description?.slice(0, 155),
       openGraph: {
         title: product.name,
@@ -43,7 +43,7 @@ export async function generateMetadata({
       },
     };
   } catch {
-    return { title: "Annaya Boutique" };
+    return { title: "Urban Boutique" };
   }
 }
 

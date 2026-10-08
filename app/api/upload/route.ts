@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     const dataURI = `data:${file.type};base64,${b64}`;
 
     const result = await cloudinary.uploader.upload(dataURI, {
-      folder: "annaya-boutique/products",
+      folder: "Urban-boutique/products",
     });
 
     return NextResponse.json({ url: result.secure_url });

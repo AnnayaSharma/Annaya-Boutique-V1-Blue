@@ -13,12 +13,12 @@ const Testimonials = dynamic(() => import("@/components/Testimonials"), {
 });
 
 const categories = [
-  { name: "Lehenga", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773507187/annaya-boutique/lehengas/ydg4qczdt7hi8cxor4nj.jpg", path: "/category/Lehenga" },
-  { name: "Saree", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773508585/annaya-boutique/sarees/utyyz0gnnwmfxwgsqhq3.webp", path: "/category/Saree" },
+  { name: "Lehenga", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773507187/Urban-boutique/lehengas/ydg4qczdt7hi8cxor4nj.jpg", path: "/category/Lehenga" },
+  { name: "Saree", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773508585/Urban-boutique/sarees/utyyz0gnnwmfxwgsqhq3.webp", path: "/category/Saree" },
   { name: "Frock", img: "https://res.cloudinary.com/douvhybil/image/upload/v1772313689/AWP%20Shopping-products/gwgpp5mk9y5pfh174app.jpg", path: "/category/Frock" },
-  { name: "Kurti", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773516396/annaya-boutique/kurties/tcyskaimbs9pk3lfmjt9.jpg", path: "/category/Kurti" },
-  { name: "Kids Wear", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773541163/annaya-boutique/products/zy0yeykgaukwggjrvfmz.jpg", path: "/products?category=Kids+Wear" },
-  { name: "Ready to Wear", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773516363/annaya-boutique/readytowears/vpr1otjdvznug2yoejnb.jpg", path: "/products?category=Ready+to+Wear" },
+  { name: "Kurti", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773516396/Urban-boutique/kurties/tcyskaimbs9pk3lfmjt9.jpg", path: "/category/Kurti" },
+  { name: "Kids Wear", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773541163/Urban-boutique/products/zy0yeykgaukwggjrvfmz.jpg", path: "/products?category=Kids+Wear" },
+  { name: "Ready to Wear", img: "https://res.cloudinary.com/douvhybil/image/upload/v1773516363/Urban-boutique/readytowears/vpr1otjdvznug2yoejnb.jpg", path: "/products?category=Ready+to+Wear" },
 ];
 
 export default function HomePageClient({ bestSellers, newArrivals }: { bestSellers: Record<string, unknown>[]; newArrivals: Record<string, unknown>[]; }) {

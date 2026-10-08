@@ -21,7 +21,7 @@ const STATUS_STYLES: Record<string, string> = {
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
-const ADMIN_KEY_STORAGE = "annaya_admin_key";
+const ADMIN_KEY_STORAGE = "Urban_admin_key";
 
 function getStoredKey(): string {
   if (typeof window === "undefined") return "";
@@ -232,7 +232,7 @@ export default function AdminPage() {
                 <span className="font-serif text-gold font-bold text-lg leading-none">A</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-serif text-white font-bold text-sm tracking-tight">Annaya Boutique</span>
+                <span className="font-serif text-white font-bold text-sm tracking-tight">Urban Boutique</span>
                 <span className="text-[9px] text-slate-500 tracking-[0.2em] font-bold uppercase mt-1">Management Console</span>
               </div>
             </button>

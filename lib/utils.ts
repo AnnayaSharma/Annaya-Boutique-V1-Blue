@@ -14,6 +14,6 @@ export function formatCurrency(amount: number) {
 }
 
 export function getWhatsAppLink(message: string) {
-  const phone = "917600558179";
+  const phone = "918396947070";
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }

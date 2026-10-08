@@ -30,7 +30,7 @@ export function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-royal/95 backdrop-blur-md border-b border-white/10 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 h-16 grid lg:grid-cols-[auto_1fr_auto] grid-cols-[1fr_1fr] items-center gap-6">
           <Link href="/" className="flex flex-col shrink-0">
-            <span className="font-serif text-2xl font-bold text-gold tracking-tight">Annaya</span>
+            <span className="font-serif text-2xl font-bold text-gold tracking-tight">Urban</span>
             <span className="text-[10px] text-white tracking-[3px] -mt-1 uppercase">Boutique</span>
           </Link>
 
